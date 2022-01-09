@@ -1,4 +1,7 @@
 .activity {
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
   display: flex;
   text-align: center;
   margin-top: 50px;

@@ -1,12 +1,18 @@
 .dignity {
-  display: flex;
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }
 .dignity__item {
   list-style-type: none;
-  width: 270px;
-
-  &:not(:first-child) {
-    margin-left: 30px;
+  @media screen and (max-width: 479px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 270px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
   }
 }
 .dignity__icon {

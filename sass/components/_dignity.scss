@@ -1,0 +1,31 @@
+.dignity {
+  display: flex;
+}
+.dignity__item {
+  list-style-type: none;
+  width: 270px;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.dignity__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: $background-button-color;
+}
+.dignity__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  margin-bottom: 10px;
+}
+.dignity__text {
+  line-height: 1.71;
+
+  color: $text-secondary-color;
+}

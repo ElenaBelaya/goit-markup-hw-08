@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+<header class="page-header">
+  <div class="container page-header__container">
+    <nav class="page-header__navigation">
+      <a class="logo" href="">Web<span class="logo__text">Studio</span></a>
+      <ul class="site-nav">
+        <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a></li>
+        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="contacts">
+      <li class="contacts__item">
+        <a href="mailto:info@devstudio.com" class="contacts__link">
+          <svg class="contacts__icon" width="16px" height="12px">
+            <use href="images/icons.svg#icon-envelope"></use>
+          </svg>info@devstudio.com
+        </a>
+      </li>
+      <li class="contacts__item">
+        <a href="tel:+380961111111" class="contacts__link"><svg class="contacts__icon" width="10px" height="16px">
+            <use href="images/icons.svg#icon-smartphone"></use>
+          </svg>+38 096 111 11 11</a>
+      </li>
+    </ul>
+  </div>
+</header>
+  <main>
+  <section class="hero-box">
+          <h1 class="hero-box__title">Эффективные решения</br>для вашего бизнеса</h1>
+          <button data-modal-open type="button" class="hero-box__button">Заказать услугу</button>            
+  </section>
+  <section class="section">
+      <!--Наши достоинства-->
+      <div class="container">
+      <h2 class="section__title section__title--visually-hidden">Наши достоинства</h2>
+      <ul class="dignity">
+        <li class="dignity__item"> 
+          <div class="dignity__icon">
+            <svg width="70px" height="70px">
+              <use href="images/icons.svg#icon-antenna-1"></use>           
+            </svg>
+          </div>
+          <h3 class="dignity__title">Внимание к деталям</h3>
+          <p class="dignity__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        </li>
+        <li class="dignity__item">
+          <div class="dignity__icon">
+            <svg width="70px" height="70px">
+              <use href="images/icons.svg#icon-clock-1"></use>
+            </svg>
+          </div>
+          <h3 class="dignity__title">Пунктуальность</h3>
+            <p class="dignity__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </li>
+        <li class="dignity__item">
+          <div class="dignity__icon">
+            <svg width="70px" height="70px">
+              <use href="images/icons.svg#icon-diagram-1"></use>
+            </svg>
+          </div>
+            <h3 class="dignity__title">Планирование</h3>
+            <p class="dignity__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        </li>
+        <li class="dignity__item">
+          <div class="dignity__icon">
+            <svg width="70px" height="70px">
+              <use href="images/icons.svg#icon-astronaut-1"></use>
+            </svg>
+          </div>
+            <h3 class="dignity__title">Современные технологии</h3>
+            <p class="dignity__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section--no-padding-top">
+      <!--Чем мы занимаемся-->
+    <div class="container">
+      <h2 class="section__title">Чем мы занимаемся</h2>
+      <ul class="activity">
+          <li class="activity__item">
+            <img src="./images/img1.jpg" alt="набираем текст на компьютере" width="370">
+              <div class="activity__overlay">
+              <h3 class="activity__title">Десктопные приложения</h3>
+              </div>
+          </li>
+          <li class="activity__item">
+            <img src="./images/img2.jpg" alt="набираем номер телефона" width="370">
+          <div class="activity__overlay">
+            <h3 class="activity__title">Мобильные приложения</h3>
+          </div>
+          </li>
+          <li class="activity__item">
+            <img src="./images/img3.jpg" alt="выбираем цвет" width="370">
+            <div class="activity__overlay">
+            <h3 class="activity__title">Дизайнерские решения</h3>
+            </div>
+          </li>
+      </ul>   
+      </div>           
+  </section>
+  <section class="section section--other-background">
+      <!--Наша команда-->
+    <div class="container">
+      <h2 class="section__title">Наша команда</h2>
+      <ul class="team">
+        <li class="team__item"><img src="./images/photo1.jpg" class="team__img" alt="Игорь Демьяненко" width="270">
+         <div class="team__thumb">
+          <h3 class="team__title">Игорь Демьяненко</h3>
+          <p class="team__text">Frontend Developer</p>
+           <ul class="social-links">
+            <li class="social-links__item">
+             <a href="" class="social-links__link">
+             <svg class="social-links__icon" width="20px" height="20px">
+             <use href="images/icons.svg#icon-instagram-2"></use>
+             </svg>
+             </a>
+             </li>
+            <li class="social-links__item">
+             <a href="" class="social-links__link">
+             <svg class="social-links__icon" width="20" height="20">
+             <use href="images/icons.svg#icon-twitter-1"></use>
+             </svg>
+             </a>
+             </li>
+            <li class="social-links__item">
+             <a href="" class="social-links__link">
+             <svg class="social-links__icon" width="20" height="20">
+             <use href="images/icons.svg#icon-facebook-1"></use>
+             </svg>
+             </a>
+             </li>
+            <li class="social-links__item">
+             <a href="" class="social-links__link">
+             <svg class="social-links__icon" width="20" height="20">
+             <use href="images/icons.svg#icon-linkedin-1"></use>
+             </svg>
+             </a>
+             </li>
+           </ul>
+         </div>          
+        </li>
+        <li class="team__item"><img src="./images/photo2.jpg" class="team__img" alt="Ольга Репина" width="270">
+          <div class="team__thumb">
+            <h3 class="team__title">Ольга Репина</h3>
+            <p class="team__text">Frontend Developer</p>
+            <ul class="social-links">
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20px" height="20px">
+                    <use href="images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>      
+        </li>
+        <li class="team__item"><img src="./images/photo3.jpg" class="team__img" alt="Николай Тарасов" width="270">
+          <div class="team__thumb">
+          <h3 class="team__title">Николай Тарасов</h3>
+            <p class="team__text">Marketing</p>
+            <ul class="social-links">
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20px" height="20px">
+                    <use href="images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>        
+        </li>
+        <li class="team__item"><img src="images/photo4.jpg" class="team__img" alt="Man in black T-shirt" width="270">
+          <div class="team__thumb">
+          <h3 class="team__title">Михаил Ермаков</h3>
+            <p class="team__text">UI Designer</p>
+            <ul class="social-links">
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20px" height="20px">
+                    <use href="images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="" class="social-links__link">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Постоянные клиенты</h2>
+      <ul class="client">
+        <li class="client__item">
+        <a href="" class="client__link">
+          <svg class="client__icon" width="106px" height="60px">
+            <use href="images/icons.svg#icon-Logo-client1"></use>
+          </svg>
+        </a>
+        </li>
+        <li class="client__item">
+          <a href="" class="client__link">
+            <svg class="client__icon" width="106px" height="60px">
+              <use href="images/icons.svg#icon-Logo-client2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="client__item">
+          <a href="" class="client__link">
+            <svg class="client__icon" width="106px" height="60px">
+              <use href="images/icons.svg#icon-Logo-client3"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="client__item">
+          <a href="" class="client__link">
+            <svg class="client__icon" width="106px" height="60px">
+              <use href="images/icons.svg#icon-Logo-client4"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="client__item">
+          <a href="" class="client__link">
+            <svg class="client__icon" width="106px" height="60px">
+              <use href="images/icons.svg#icon-Logo-client5"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="client__item">
+          <a href="" class="client__link">
+            <svg class="client__icon" width="106px" height="60px">
+              <use href="images/icons.svg#icon-Logo-client6"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+  <footer class="page-footer">
+    <div class="container page-footer__container">
+      <div class="page-footer__content">
+        <a class="logo logo-footer__logo" href="">Web<span class="logo__text logo__text--white-color">Studio</span></a>
+        <address>
+          <ul class="address">
+            <li class="address__item"><a class="address__link address__link--other-color" href="https://goo.gl/maps/9DHxodGgufUYayEx5">г.
+                Киев, пр-т
+                Леси Украинки, 26</a>
+            </li>
+            <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="address__item"><a class="address__link" href="tel:+380961111111">tel:+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="join">
+        <h3 class="join__title">присоединяйтесь</h3>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="" class="social-links__link">
+              <svg class="social-links__icon social-links__icon--color-white" width="20px" height="20px">
+                <use href="images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="" class="social-links__link">
+              <svg class="social-links__icon social-links__icon--color-white" width="20" height="20">
+                <use href="images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="" class="social-links__link">
+              <svg class="social-links__icon social-links__icon--color-white" width="20" height="20">
+                <use href="images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="" class="social-links__link">
+              <svg class="social-links__icon social-links__icon--color-white" width="20" height="20">
+                <use href="images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class="subscription">
+        <h2 class="subscription__title">Подпишитесь на рассылку</h2>
+        <label class="subscription__label">
+          <input class="subscription__input" type="email" name="user e-mail" placeholder="E-mail">
+          <span class="subscription__box">
+            <button type="submit" class="subscription__button">Подписаться<svg class="subscription__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon send"></use>
+              </svg>
+            </button>
+            </span>
+        </label>
+      </form>
+    </div>
+  </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <form class="modal">
+        <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <label class="modal__label">
+          <span class="modal__text">Имя</span>
+          <span class="modal__box">
+            <input type="text" class="modal__input" name="user name">
+            <svg width="20px" height="20px" class="modal__icon">
+            <use href="./images/icons.svg#person-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="modal__label">
+          <span class="modal__text">Телефон</span>
+          <span class="modal__box">
+            <input type="tel" class="modal__input" name="user phone">
+          <svg class="modal__icon" width="20px" height="20px">
+          <use href="./images/icons.svg#phone-black-18dp-1"></use>
+          </svg>
+          </span>
+        </label>
+        <label class="modal__label">
+          <span class="modal__text">Почта</span>
+          <span class="modal__box">
+         <input type="email" class="modal__input" name="user mail">
+          <svg class="modal__icon" width="20px" height="20px">
+          <use href="./images/icons.svg#email-black-18dp-1"></use>
+          </svg>
+          </span>
+        </label>
+        <label class="modal__overlay">
+          <span class="modal__text">Комментарий</span>
+          <textarea name="user comments" class="modal__comments" placeholder="Введите текст"></textarea>
+        </label>
+        <label class="agree">
+          <input type="checkbox" class=" agree__checkbox agree__checkbox-visually-hidden" name="input-checkbox">
+          <svg class="agree__icon" width="16px" height="15px">
+            <use href="./images/icons.svg#icon check"></use>
+          </svg>
+          <span class="agree__text">Соглашаюсь с рассылкой и принимаю</span>
+          <a href="" class="agree__link">Условия договора</a>
+        </label>
+        <Button type="submit" class="submit-button">Отправить</Button>
+      </form>
+      <button class="close-modal" data-modal-close>
+        <svg class="modal-svg">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+      </button>
+      </div>
+     </div>
+     
+  <script src="./js/modal.js"></script>
+</body>
+</html>

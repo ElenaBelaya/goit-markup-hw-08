@@ -1,15 +1,30 @@
 .client {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
 }
 
 .client__item {
-  width: 170px;
-  height: 92px;
   background-color: #ffffff;
 
-  &:not(:first-child) {
-    margin-left: 30px;
+  @media screen and (max-width: 479px) {
+    width: calc((100% - 30px * 2) / 2);
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    width: 170px;
+    height: 92px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
   }
 }
 

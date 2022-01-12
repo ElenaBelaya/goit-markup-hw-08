@@ -7,9 +7,15 @@ button {
 
 .filter {
   display: flex;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
   margin-bottom: 50px;
-  justify-content: center;
   list-style-type: none;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
 
   & button:hover,
   & button:focus {
@@ -37,4 +43,13 @@ button {
 
 .filter__item:not(:first-child) {
   margin-left: 8px;
+  @media screen and (max-width: 479px) {
+    &:nth-child(4) {
+      margin-left: 0px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-top: 8px;
+    }
+    justify-content: flex-start;
+  }
 }

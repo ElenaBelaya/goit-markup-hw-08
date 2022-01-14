@@ -14,18 +14,21 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (max-width: 767px) {
-    width: 354px;
-    &:not(:last-child) {
+  @media screen and (min-width: 479px) and (max-width: 767px) {
+    width: 320px;
+    &:nth-child(-n + 2) {
       margin-bottom: 30px;
+    }
+    &:nth-child(2n) {
+      margin-left: 30px;
     }
   }
   @media screen and (min-width: 768px) {
     &:not(:first-child) {
       margin-left: 30px;
     }
+    width: 270px;
   }
-  width: 270px;
 }
 .dignity__icon {
   display: flex;

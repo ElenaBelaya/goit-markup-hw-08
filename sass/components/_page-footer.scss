@@ -5,7 +5,12 @@ footer {
 }
 
 .page-footer__content {
-  flex-grow: 1;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-left: 60px;
+  }
+  @media screen and (min-width: 780px) {
+    flex-grow: 1;
+  }
 }
 .page-footer__container {
   display: flex;
@@ -15,11 +20,14 @@ footer {
     align-items: center;
     width: 100%;
   }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
   align-items: baseline;
   position: relative;
 }
 .address__item {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     display: block;
     max-width: 232px;
     text-align: center;
@@ -54,16 +62,19 @@ footer {
 
 .join {
   flex-direction: column;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
     margin-top: 60px;
     margin-left: 0px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-left: 165px;
   }
   margin-left: 70px;
 }
 .join__title,
 .subscription__title {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
   font-size: 14px;
@@ -74,17 +85,20 @@ footer {
 }
 
 .subscription {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin-left: 0px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-top: 60px;
+  }
   margin-left: 93px;
 }
 .subscription__input {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     max-width: 450px;
     margin-bottom: 20px;
   }
@@ -108,7 +122,7 @@ footer {
 }
 
 .subscription__button {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -131,7 +145,7 @@ footer {
 
 .subscription__label {
   display: flex;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     justify-content: center;
   }

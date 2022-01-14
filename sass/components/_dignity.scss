@@ -2,6 +2,9 @@
   @media screen and (min-width: 480px) {
     display: flex;
   }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
 }
 .dignity__item {
   list-style-type: none;
@@ -11,12 +14,18 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 480px) {
-    width: 270px;
+  @media screen and (max-width: 767px) {
+    width: 354px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
     &:not(:first-child) {
       margin-left: 30px;
     }
   }
+  width: 270px;
 }
 .dignity__icon {
   display: flex;

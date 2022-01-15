@@ -185,11 +185,18 @@ header {
 
 @media screen and (max-width: 479px) {
   .page-header__menu {
+    display: none;
     position: absolute;
-    width: 100%;
     top: 100%;
     left: 0px;
+    width: 100%;
   }
+}
+
+.page-header__menu.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page-header__menu-button {

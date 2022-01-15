@@ -49,27 +49,25 @@ header {
 .container {
   padding-right: 15px;
   padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 738px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -372,6 +370,9 @@ header {
   .dignity {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -382,6 +383,7 @@ header {
 @media screen and (max-width: 479px) {
   .dignity__item {
     width: 100%;
+    text-align: center;
   }
   .dignity__item:not(:last-child) {
     margin-bottom: 30px;
@@ -390,7 +392,7 @@ header {
 
 @media screen and (min-width: 479px) and (max-width: 767px) {
   .dignity__item {
-    width: 320px;
+    width: calc((100% - 2 * 30px) / 2);
   }
   .dignity__item:nth-child(-n + 2) {
     margin-bottom: 30px;
@@ -538,7 +540,7 @@ header {
 
 @media screen and (min-width: 479px) and (max-width: 767px) {
   .team__item {
-    width: 320px;
+    width: calc((100% - 2 * 30px) / 2);
   }
   .team__item:nth-child(-n + 2) {
     margin-bottom: 30px;
@@ -668,6 +670,9 @@ header {
   .client {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -958,7 +963,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .page-footer__content {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;

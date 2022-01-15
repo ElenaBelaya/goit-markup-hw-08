@@ -4,18 +4,20 @@
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .dignity__item {
   list-style-type: none;
   @media screen and (max-width: 479px) {
     width: 100%;
+    text-align: center;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
   @media screen and (min-width: 479px) and (max-width: 767px) {
-    width: 320px;
+    width: calc((100% - 2 * 30px) / 2);
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
     }

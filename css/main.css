@@ -177,6 +177,21 @@ header {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 479px) {
+  .page-header__container {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .page-header__menu {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0px;
+  }
+}
+
 .page-header__menu-button {
   display: inline-block;
   margin: 0px;
@@ -217,12 +232,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
-}
-
-@media screen and (max-width: 479px) {
-  .site-nav {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -275,12 +284,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-}
-
-@media screen and (max-width: 479px) {
-  .contacts {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {

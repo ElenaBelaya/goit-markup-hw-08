@@ -16,14 +16,18 @@
 <header class="page-header">
   <div class="container page-header__container">
     <a class="logo" href="">Web<span class="logo__text">Studio</span></a>
-    <button type="button" class="page-header__menu-button is-open" data-menu-button>
+    <button type="button" 
+    class="page-header__menu-button" 
+    aria-expanded="false"
+    aria-controls="page-header__menu" 
+    data-menu-button>
       <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
         <use class="page-header__icon-close" href="./images/icons.svg#icon-close_40px"></use>
         <use class="page-header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
       </svg>
     </button>
-    <button type="button" data-modal-open>открыть</button>
-    <div class="page-header__menu is-open" id="page-header__menu" data-menu>
+    <div class="page-header__menu" id="page-header__menu" data-menu>
+      
     <nav class="page-header__navigation">
       <ul class="site-nav">
         <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a></li>
@@ -53,7 +57,6 @@
 
       
       </ul>
-      <button type="button" data-modal-close>закрыть</button>
       </div>
     </div>
 </header>
@@ -401,7 +404,7 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <form class="modal">
+      <form class="modal__form">
         <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
         <label class="modal__label">
           <span class="modal__text">Имя</span>

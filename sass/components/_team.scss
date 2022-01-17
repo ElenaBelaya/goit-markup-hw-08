@@ -56,7 +56,9 @@
 
 .team__img {
   @media screen and (max-width: 479px) {
-    width: 450px;
+    width: 100%;
   }
-  width: 270px;
+  @media screen and (min-width: 480px) {
+    width: calc (100% - 2 * 30px) /2;
+  }
 }

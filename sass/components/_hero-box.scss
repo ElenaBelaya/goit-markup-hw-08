@@ -12,43 +12,58 @@
       rgba(47, 48, 58, 0.3),
       rgba(47, 48, 58, 0.5)
     ),
-    url(../../images/img/Header_\ mobile.jpg);
+    url(../images/img/Header_mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero-box {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.5)
-      ),
-      url(../../images/img/Header_\ mobile_2x.jpg);
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .hero-box {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.5)
-      ),
-      url(../../images/img/Header_\ desktop.jpg);
-  }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .hero-box {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url(../images/img/Header_mobile_2x.jpg);
+  }
+
+  @media screen and (min-width: 479px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url(../images/img/Header_tablet.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.3),
           rgba(47, 48, 58, 0.5)
         ),
-        url(../../images/img/Header_\ desktop_2x.jpg);
+        url(../images/img/Header_tablet_2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url(../images/img/Header_desktop.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.3),
+          rgba(47, 48, 58, 0.5)
+        ),
+        url(../images/img/Header_desktop_2x.jpg);
     }
   }
 }

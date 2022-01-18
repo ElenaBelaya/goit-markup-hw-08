@@ -23,9 +23,7 @@ footer {
     align-items: center;
     width: 100%;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    flex-wrap: wrap;
-  }
+
   align-items: baseline;
   position: relative;
 }
@@ -95,6 +93,7 @@ footer {
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-top: 60px;
+    margin-left: 0;
   }
   margin-left: 93px;
 }

@@ -11,6 +11,7 @@ button {
   @media screen and (max-width: 479px) {
     margin-bottom: 40px;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-bottom: 30px;

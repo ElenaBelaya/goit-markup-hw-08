@@ -10,6 +10,9 @@ page-header {
   @media screen and (max-width: 479px) {
     justify-content: space-between;
   }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .page-header__menu {
@@ -30,9 +33,6 @@ page-header {
     &.is-open {
       display: flex;
     }
-  }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    margin-left: 88px;
   }
 
   @media screen and (min-width: 480px) {
@@ -140,7 +140,6 @@ page-header {
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     flex-direction: column;
-    margin-left: 84px;
   }
   display: flex;
 }
@@ -150,9 +149,7 @@ page-header {
       margin-bottom: 10px;
     }
   }
-  @media screen and (min-width: 768px) {
-    margin-left: 305px;
-  }
+
   display: flex;
   align-items: center;
 }

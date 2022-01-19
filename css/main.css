@@ -231,6 +231,9 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -363,7 +366,7 @@ header {
 }
 
 .contacts {
-  margin-left: 305px;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,6 +388,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: auto;
   }
 }
 
@@ -999,20 +1005,23 @@ header {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-  .grid__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
-  }
-}
-
 @media screen and (max-width: 479px) {
   .grid__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .grid__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid__item {
+    width: calc((100% - 90px) / 3);
+  }
   .grid__item:not(:nth-child(3n + 1)) {
     margin-left: 30px;
   }
@@ -1032,6 +1041,7 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  white-space: nowrap;
   margin-bottom: 4px;
 }
 
@@ -1105,8 +1115,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
   list-style-type: none;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 479px) {
@@ -1119,6 +1129,7 @@ button {
 
 @media screen and (min-width: 480px) {
   .filter {
+    width: 100vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

@@ -36,6 +36,7 @@ page-header {
   }
   @media screen and (min-width: 480px) {
     display: flex;
+    justify-content: space-between;
   }
   @media screen and (min-width: 768px) {
     margin-left: 93px;
@@ -143,8 +144,11 @@ page-header {
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: auto;
   }
-  margin-left: 305px;
+  margin-left: auto;
   display: flex;
 }
 .contacts__item {

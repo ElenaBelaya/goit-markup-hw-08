@@ -10,9 +10,6 @@ page-header {
   @media screen and (max-width: 479px) {
     justify-content: space-between;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 100%;
-  }
 }
 
 .page-header__menu {
@@ -37,6 +34,8 @@ page-header {
   @media screen and (min-width: 480px) {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    margin-left: 88px;
   }
   @media screen and (min-width: 768px) {
     margin-left: 93px;
@@ -50,6 +49,7 @@ page-header {
   border: none;
   background-color: transparent;
   z-index: 2;
+
   @media screen and (min-width: 480px) {
     display: none;
   }
@@ -80,9 +80,7 @@ page-header {
     flex-direction: column;
     margin-left: 0px;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    margin-left: 88px;
-  }
+
   display: flex;
 }
 .site-nav__link {
@@ -146,7 +144,6 @@ page-header {
     flex-direction: column;
     padding-top: 21px;
     padding-bottom: 21px;
-    margin-left: auto;
   }
   margin-left: auto;
   display: flex;

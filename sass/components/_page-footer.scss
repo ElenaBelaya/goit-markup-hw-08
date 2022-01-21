@@ -102,12 +102,10 @@ footer {
     width: 100%;
     margin-bottom: 20px;
   }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 450px;
     margin-bottom: 20px;
   }
-
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -150,6 +148,9 @@ footer {
 }
 
 .subscription__label {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   display: flex;
   @media screen and (max-width: 1199px) {
     flex-direction: column;

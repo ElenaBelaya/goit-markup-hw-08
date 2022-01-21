@@ -11,7 +11,6 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-
 header {
   border-bottom: 1px solid #ececec;
 }
@@ -34,13 +33,13 @@ header {
 }
 
 .section {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     padding: 60px 0;
   }
   padding: 94px 0;
 }
 .section--no-padding-top {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding: 0;
   }
   padding-top: 0px;
@@ -61,13 +60,13 @@ header {
 }
 
 .section__title {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     &--mobile-hidden {
       display: none;
     }
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 28px;
   }
   font-weight: 700;

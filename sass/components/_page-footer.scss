@@ -5,29 +5,29 @@ footer {
 }
 
 .page-footer__content {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     flex-grow: 1;
   }
 }
 .page-footer__container {
   display: flex;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     align-items: baseline;
   }
 }
 .address__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: block;
     max-width: 232px;
     text-align: center;
@@ -35,7 +35,7 @@ footer {
 }
 
 .address__item:not(:first-child) {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin-top: 8px;
   }
   margin-top: 9px;
@@ -67,14 +67,14 @@ footer {
     margin-top: 60px;
     margin-left: 0px;
   }
-  @media screen and (min-width: 768px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 0px;
   }
   margin-left: 70px;
 }
 .join__title,
 .subscription__title {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
   font-size: 14px;
@@ -85,23 +85,29 @@ footer {
 }
 
 .subscription {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin-left: 0px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 60px;
   }
   margin-left: 93px;
 }
 .subscription__input {
   @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 450px;
     margin-bottom: 20px;
   }
+
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -122,7 +128,7 @@ footer {
 }
 
 .subscription__button {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -145,7 +151,7 @@ footer {
 
 .subscription__label {
   display: flex;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
     justify-content: center;
   }

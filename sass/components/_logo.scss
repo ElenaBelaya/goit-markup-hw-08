@@ -1,5 +1,5 @@
 .logo {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 24px;
     line-height: 1.17;
   }
@@ -18,7 +18,7 @@
   }
 }
 .logo-footer__logo {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     justify-content: center;
     max-width: 232px;

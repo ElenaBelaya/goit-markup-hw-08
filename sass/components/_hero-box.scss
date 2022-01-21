@@ -27,7 +27,7 @@
       ),
       url(../images/img/Header-mobile@2.jpg);
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.3),
@@ -46,7 +46,7 @@
         url(../images/img/Header-tablet@2.jpg);
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.3),
@@ -69,6 +69,10 @@
 /*../images/Img-min.jpg*/
 
 .hero-box__title {
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.61;
+  }
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;

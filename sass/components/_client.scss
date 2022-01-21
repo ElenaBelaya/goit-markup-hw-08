@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -11,7 +11,7 @@
 .client__item {
   background-color: #ffffff;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     width: calc((100% - 30px * 2) / 2);
 
     &:not(:nth-last-child(-n + 2)) {
@@ -21,7 +21,7 @@
       margin-left: 30px;
     }
   }
-  @media screen and (min-width: 479px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 30px * 3) / 3);
     &:nth-child(-n + 3) {
       margin-bottom: 30px;
@@ -30,7 +30,7 @@
       margin-left: 30px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1199px) {
     width: 170px;
     height: 92px;
     &:not(:first-child) {

@@ -146,9 +146,6 @@ footer {
 }
 
 .subscription__label {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
   display: flex;
   @media screen and (max-width: 1199px) {
     flex-direction: column;

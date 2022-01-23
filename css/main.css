@@ -75,7 +75,7 @@ header {
   padding: 94px 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding: 60px 0;
   }
@@ -113,6 +113,12 @@ header {
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .section__title {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -460,6 +466,12 @@ header {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__icon {
+    display: none;
+  }
+}
+
 .page-header__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,6 +523,14 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-box {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -742,10 +762,7 @@ header {
 
 @media screen and (max-width: 767px) {
   .team {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
   }
 }
 
@@ -760,12 +777,15 @@ header {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  position: relative;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
   .team__item {
     margin-bottom: 30px;
+  }
+  .team__item:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -796,16 +816,7 @@ header {
 .team__thumb {
   padding-top: 30px;
   padding-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .team__title {
@@ -820,16 +831,8 @@ header {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 767px) {
-  .team__img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team__img {
-    width: 270px;
-  }
+.team__img {
+  width: 100%;
 }
 
 .social-links {
@@ -996,6 +999,7 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 32px;
   }
 }
 
@@ -1180,19 +1184,19 @@ button {
 
 @media screen and (max-width: 767px) {
   .filter {
-    margin-bottom: 40px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .filter {
     margin-bottom: 30px;
-    width: 100vw;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1230,19 +1234,19 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .filter__item:not(:first-child) {
-    margin-left: 8px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .filter__item {
     margin-right: 8px;
-    margin-top: 8px;
+    margin-bottom: 15px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item:not(:first-child) {
+    margin-left: 8px;
   }
 }
 
@@ -1382,7 +1386,6 @@ footer {
 @media screen and (max-width: 1199px) {
   .subscription {
     margin-left: 0px;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1419,7 +1422,6 @@ footer {
 
 @media screen and (max-width: 767px) {
   .subscription__input {
-    width: 100%;
     margin-bottom: 20px;
   }
 }

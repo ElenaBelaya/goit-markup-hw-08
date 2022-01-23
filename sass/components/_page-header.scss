@@ -203,6 +203,9 @@ page-header {
   }
 }
 .contacts__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   fill: currentColor;
   margin-right: 10px;
 }

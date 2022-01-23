@@ -87,7 +87,6 @@ footer {
 .subscription {
   @media screen and (max-width: 1199px) {
     margin-left: 0px;
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -99,7 +98,6 @@ footer {
 }
 .subscription__input {
   @media screen and (max-width: 767px) {
-    width: 100%;
     margin-bottom: 20px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {

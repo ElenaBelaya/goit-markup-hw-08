@@ -1,4 +1,9 @@
 .hero-box {
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+  }
   text-align: center;
   background-color: $background-color;
   padding-top: 200px;
